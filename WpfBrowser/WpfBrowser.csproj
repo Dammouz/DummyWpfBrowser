@@ -1,9 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+
+    <AssemblyName>WpfBrowser</AssemblyName>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>net6.0-windows;net5.0-windows;netcoreapp3.1</TargetFrameworks>
     <UseWPF>true</UseWPF>
+
+    <DebugType>Embedded</DebugType>
+
+    <OutDir>..\bin\$(Configuration)\$(TargetFramework)\$(AssemblyName)\</OutDir>
+
   </PropertyGroup>
 
 </Project>
